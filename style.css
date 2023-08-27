@@ -30,19 +30,23 @@ body {
   justify-items: left;
   font-family: "Lexend Deca", sans-serif;
   & .btn {
-    padding: 0.234rem 2rem;
+    padding: 0.234rem 3rem;
     border-radius: 30px;
     border: none;
   }
 }
 .card-1 {
   background-color: var(--Bright-orange);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   & .btn {
     color: var(--Bright-orange);
   }
 }
 .card-2 {
   background-color: var(--Very-dark-cyan);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   & .btn {
     color: var(--very-Dark-cyan);
   }
@@ -76,10 +80,16 @@ body {
     place-items: center;
   }
   .card {
-    height: 28rem;
+    height: 30rem;
+    row-gap: 3rem;
     padding: 3rem;
-    & .btn {
-      padding: 0.123rem 2rem;
-    }
+  }
+  .card-1 {
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0px;
+  }
+  .card-2 {
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
   }
 }
