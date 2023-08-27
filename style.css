@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+
+  --T-white: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray: hsl(0, 0%, 95%);
+
+  --Font-size: 15px;
+
+  font-family: "Lexend Deca", sans-serif;
+}
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.card {
+  width: 20rem;
+  padding: 2rem;
+  height: 25rem;
+  display: grid;
+  justify-items: left;
+  font-family: "Lexend Deca", sans-serif;
+  & .btn {
+    padding: 5px 2rem;
+    border-radius: 30px;
+    border: none;
+  }
+}
+.card-1 {
+  background-color: var(--Bright-orange);
+  & .btn {
+    color: var(--Bright-orange);
+  }
+}
+.card-2 {
+  background-color: var(--Very-dark-cyan);
+  & .btn {
+    color: var(--very-Dark-cyan);
+  }
+}
+.card-3 {
+  background-color: var(--Dark-cyan);
+  & .btn {
+    color: var(--Dark-cyan);
+  }
+}
+
+.container {
+  color: var(--T-white);
+  height: 15rem;
+  display: grid;
+  & p {
+    font-size: var(--Font-size);
+    line-height: 1.5;
+    word-spacing: 2px;
+  }
+  & h1 {
+    color: var(--Very-light-gray);
+    font-family: "Big Shoulders Display", cursive;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+  }
+  .card {
+    height: 28rem;
+    padding: 3rem;
+    & .btn {
+      padding: 0px 2rem;
+    }
+  }
+}
