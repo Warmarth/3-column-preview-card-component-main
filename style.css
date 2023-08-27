@@ -30,7 +30,7 @@ body {
   justify-items: left;
   font-family: "Lexend Deca", sans-serif;
   & .btn {
-    padding: 5px 2rem;
+    padding: 0.234rem 2rem;
     border-radius: 30px;
     border: none;
   }
@@ -79,7 +79,7 @@ body {
     height: 28rem;
     padding: 3rem;
     & .btn {
-      padding: 0px 2rem;
+      padding: 0.123rem 2rem;
     }
   }
 }
